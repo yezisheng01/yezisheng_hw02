@@ -1,0 +1,14 @@
+[
+{
+  "directory": "E:/Users/Lenovo/Desktop/yezisheng_hw1-main/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\algebra.obj -c E:\\Users\\Lenovo\\Desktop\\yezisheng_hw1-main\\src\\algebra.c",
+  "file": "E:/Users/Lenovo/Desktop/yezisheng_hw1-main/src/algebra.c",
+  "output": "CMakeFiles/main.dir/src/algebra.obj"
+},
+{
+  "directory": "E:/Users/Lenovo/Desktop/yezisheng_hw1-main/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\main.obj -c E:\\Users\\Lenovo\\Desktop\\yezisheng_hw1-main\\src\\main.c",
+  "file": "E:/Users/Lenovo/Desktop/yezisheng_hw1-main/src/main.c",
+  "output": "CMakeFiles/main.dir/src/main.obj"
+}
+]
