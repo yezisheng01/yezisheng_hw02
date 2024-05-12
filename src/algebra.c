@@ -63,14 +63,14 @@ Matrix mul_matrix(Matrix a, Matrix b)
    
     if (a.cols!=b.rows)
     {
-        printf("Error: Matrix a and b must have the same rows and cols.\n");
+        printf("Error: The number of cols of matrix a must be equal to the number of rows of matrix b.\n");
         return create_matrix(0,0);
     }
     else
     {
         int rows, cols;
         rows = a.rows;
-        cols = a.cols;
+        cols = b.cols;
         Matrix c = create_matrix(rows, cols);
         for( int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
@@ -158,6 +158,13 @@ int rank_matrix(Matrix a)
 
 double trace_matrix(Matrix a)
 {
+     if (a.cols!=a.rows)
+    {
+     printf("Error: The matrix must be a square matrix.\n");
+     return 0;
+    }
+    else
+    {
         int rows, cols, k;
         k=0;
         rows = a.rows;
@@ -171,6 +178,7 @@ double trace_matrix(Matrix a)
         }
     
     return k;
+    }
 }
 
 
