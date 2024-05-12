@@ -61,7 +61,7 @@ Matrix sub_matrix(Matrix a, Matrix b)
 Matrix mul_matrix(Matrix a, Matrix b)
 {
    
-    if (a.cols!=b.cols||a.rows!=b.rows)
+    if (a.cols!=b.rows)
     {
         printf("Error: Matrix a and b must have the same rows and cols.\n");
         return create_matrix(0,0);
@@ -158,9 +158,21 @@ int rank_matrix(Matrix a)
 
 double trace_matrix(Matrix a)
 {
-    // ToDo
-    return 0;
+        int rows, cols, k;
+        k=0;
+        rows = a.rows;
+        cols = a.cols;
+        for( int i = 0; i < rows; i++){
+            for(int j = 0; j < cols; j++){
+                if(i==j){
+                    k+=a.data[i][j];
+                }
+            }
+        }
+    
+    return k;
 }
+
 
 void print_matrix(Matrix a)
 {
